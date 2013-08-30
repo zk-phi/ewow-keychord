@@ -1,0 +1,22 @@
+* lib_keychord.ahk
+
+a keychord extension for EWOW.
+
+** Usage
+
+Load this library
+
+: #Include lib_keychord.ahk
+
+You may add a new keychord binding as follows :
+
+: j:: keychord("k", "goto_char")
+: k:: keychord("j", "goto_char")
+
+then pressing "j" and "k" together will invoke "goto_char" command.
+
+** Customization
+
+You may adjust the sensibility with variable "keychord_delay".
+
+: keychord_delay = 250
